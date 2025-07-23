@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The HandyMan - Aquela Mãozinha certa!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a1a2f;
+      color: #ffffff;
+    }
+    header {
+      display: none;
+    }
+    #banner {
+      background-image: url('https://images.unsplash.com/photo-1592853625602-5a7c62956e19?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .banner-text {
+      position: relative;
+      text-align: center;
+      color: #ffffff;
+      z-index: 1;
+      background: rgba(13, 34, 61, 0.75);
+      padding: 30px 20px;
+      border-radius: 12px;
+      max-width: 90%;
+      backdrop-filter: blur(5px);
+    }
+    .banner-text h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .banner-text p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #c0c0c0;
+    }
+    .banner-text a {
+      background-color: #1c8f4c;
+      color: #ffffff;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .banner-text a:hover {
+      background-color: #166b3a;
+    }
+    nav {
+      text-align: center;
+      background-color: #0d223d;
+      padding: 15px;
+    }
+    nav a {
+      color: #c0c0c0;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #c0c0c0;
+      border-bottom: 2px solid #c0c0c0;
+      padding-bottom: 10px;
+      font-size: 2em;
+    }
+    .servicos li {
+      margin-bottom: 12px;
+      font-size: 1.1em;
+    }
+    footer {
+      background-color: #0d223d;
+      color: #c0c0c0;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+    .contato a {
+      color: #c0c0c0;
+      display: block;
+      margin: 8px 0;
+      font-size: 1.05em;
+      text-decoration: none;
+    }
+    .whatsapp {
+      background-color: #1c8f4c;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      width: fit-content;
+    }
+    .whatsapp:hover {
+      background-color: #166b3a;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <div class="banner-text">
+      <h1>The HandyMan</h1>
+      <p>Aquela Mãozinha certa!</p>
+      <a href="https://wa.me/351938609110">Solicitar Orçamento</a>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+    <a href="#redes">Redes Sociais</a>
+  </nav>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul class="servicos">
+      <li>Reparo de Eletrônicos</li>
+      <li>Reparo de Móveis</li>
+      <li>Pintura</li>
+      <li>Instalação de Câmeras de Segurança</li>
+      <li>Canalização</li>
+      <li>Serviços Elétricos</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Precisa daquela mãozinha certa? Fale com a gente!</p>
+    <div class="contato">
+      <a href="tel:+351938609110">Telefone: 93 860 91 10</a>
+      <a href="https://wa.me/351938609110" class="whatsapp">Enviar mensagem no WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="redes">
+    <h2>Redes Sociais</h2>
+    <p>Acompanhe nossos serviços e novidades:</p>
+    <div class="contato">
+      <a href="https://www.instagram.com/th3.0nlyhandyman" target="_blank">Instagram: @th3.0nlyhandyman</a>
+      <a href="https://www.tiktok.com/@thehandyman41" target="_blank">TikTok: @thehandyman41</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The HandyMan - Aquela Mãozinha certa!</p>
+  </footer>
+</body>
+</html>
